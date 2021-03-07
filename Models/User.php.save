@@ -1,0 +1,22 @@
+<?
+include '../Config/DataBase.php';
+//CREAMOS UNA CLASE
+class Usuario
+{
+$Correo = '';
+$contrasenia ='';
+$id = 0;
+
+    function Validar()
+    {
+	$SQL= "SELECT TOP 1 * FROM Usuarios WHERE Correo = '$this->correo' AND contrasenia = '$this->contrasenia'";
+        $resultado = mysqli_query($conexion, $sql);
+	while($row = mysql_fetch_assoc($result)) {
+ 	
+}
+    }
+}
+
+$resultado = mysqli_query($conexion, $sql);
+
+?>
